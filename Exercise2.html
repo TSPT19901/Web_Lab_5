@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <title>Cambodia Address Form</title>
 
     <style>
@@ -25,31 +32,48 @@
     <!-- Connect External JavaScript -->
     <script src="exercise2.js" defer></script>
 </head>
-<body>
+<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="card w-full max-w-lg bg-base-100 shadow-xl">
+            
+            
+        <div class="card-body flex flex-col justify-center items-center space-y-3"  >
+            <h2 class="card-title text-primary mb-4 pr-28">Select Your Address</h2>
+        <form  id="addressForm" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-<h2>Select Your Address</h2>
+            <div class="form-control">
+                <label>Province</label>
+                <select class="bg-gray-200 rounded" id="province" name="province" required>
+                    <option class="text-gray-950" value="" disabled selected>Select Province</option>
+                </select>
+            </div>
 
-<form id="addressForm" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <div class="form-control">
+                <label>District</label>
+                <select class="bg-gray-200 rounded" id="district" name="district" disabled required>
+                <option value="" disabled selected>Select District</option>
+            </select>
+            </div>
+            
 
-    <select id="province" name="province" required>
-        <option value="" disabled selected>Select Province</option>
-    </select>
+            <div class="form-control">
+                <label>Commune</label>
+                <select class="bg-gray-200 rounded" id="commune" name="commune" disabled required>
+                <option value="" disabled selected>Select Commune</option>
+            </select>
+            </div>
 
-    <select id="district" name="district" disabled required>
-        <option value="" disabled selected>Select District</option>
-    </select>
+            <div class="form-control">
+                <label class="text-gray-200">Village</label>
+                <select class="bg-gray-200 rounded" id="village" name="village" disabled required>
+                    <option value="" disabled selected>Select Village</option>
+                </select>   
+            </div>
 
-    <select id="commune" name="commune" disabled required>
-        <option value="" disabled selected>Select Commune</option>
-    </select>
+            <button class="btn btn-danger" type="submit">Submit</button>
 
-    <select id="village" name="village" disabled required>
-        <option value="" disabled selected>Select Village</option>
-    </select>
+        </form>
+        </div>
 
-    <button type="submit">Submit</button>
-
-</form>
-
+        </div>
 </body>
 </html>
