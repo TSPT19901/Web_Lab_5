@@ -27,29 +27,29 @@
 </head>
 <body>
 
-    <h2>Select Your Address</h2>
+<h2>Select Your Address</h2>
 
-    <form id="addressForm">
+<form id="addressForm" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-        <select id="province" required>
-            <option value="" disabled selected>Select Province</option>
-        </select>
+    <select id="province" name="province" required>
+        <option value="" disabled selected>Select Province</option>
+    </select>
 
-        <select id="district" disabled required>
-            <option value="" disabled selected>Select District</option>
-        </select>
+    <select id="district" name="district" disabled required>
+        <option value="" disabled selected>Select District</option>
+    </select>
 
-        <select id="commune" disabled required>
-            <option value="" disabled selected>Select Commune</option>
-        </select>
+    <select id="commune" name="commune" disabled required>
+        <option value="" disabled selected>Select Commune</option>
+    </select>
 
-        <select id="village" disabled required>
-            <option value="" disabled selected>Select Village</option>
-        </select>
+    <select id="village" name="village" disabled required>
+        <option value="" disabled selected>Select Village</option>
+    </select>
 
-        <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
 
-    </form>
+</form>
 
 </body>
 </html>
