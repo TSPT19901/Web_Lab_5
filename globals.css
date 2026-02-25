@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+}
+
+
+.sn-pro {
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: bold;
+}

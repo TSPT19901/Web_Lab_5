@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambodia Address Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        select, button {
+            display: block;
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Connect External JavaScript -->
+    <script src="exercise2.js" defer></script>
+</head>
+<body>
+
+    <h2>Select Your Address</h2>
+
+    <form id="addressForm">
+
+        <select id="province" required>
+            <option value="" disabled selected>Select Province</option>
+        </select>
+
+        <select id="district" disabled required>
+            <option value="" disabled selected>Select District</option>
+        </select>
+
+        <select id="commune" disabled required>
+            <option value="" disabled selected>Select Commune</option>
+        </select>
+
+        <select id="village" disabled required>
+            <option value="" disabled selected>Select Village</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
